@@ -67,7 +67,7 @@ class UsersController < ApplicationController
 
   def create_wordpress_instance
     docker_path = '/usr/bin/'
-    container_id = `#{docker_path}docker run -d hart/wordpress`
+    container_id = `#{docker_path}docker run -d slumlord/wordpress`
     cmd = "#{docker_path}docker inspect #{container_id}"
     json_infos = `#{cmd}`
     i = JSON.parse(json_infos)
