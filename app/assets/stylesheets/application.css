@@ -245,6 +245,7 @@ textarea {
 
 body {
   margin: 0;
+  padding: 50px;
   font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif;
   font-size: 16px;
   line-height: 20px;
