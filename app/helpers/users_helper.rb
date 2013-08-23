@@ -12,7 +12,7 @@ module UsersHelper
   end
 
   def my_public_ip
-    @@ip ||= Net::HTTP.get_response(URI.parse("http://icanhazip.com/")).body.chomp
+    @@ip ||= Net::HTTP.get_response(URI.parse("http://ipv4.icanhazip.com")).body.chomp
   end
 
 end

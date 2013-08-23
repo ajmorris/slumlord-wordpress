@@ -71,7 +71,7 @@ class UsersController < ApplicationController
     cmd = "#{docker_path}docker inspect #{container_id}"
     json_infos = `#{cmd}`
     i = JSON.parse(json_infos)
-    @user.memcached = i[0]["NetworkSettings"]["PortMapping"]["80"]
+    @user.memcached = i[0]["NetworkSettings"]["PortMapping"]["Tcp"]["80"]
     @user.container_id = container_id
     @user.docker_ip = i[0]["NetworkSettings"]["IpAddress"]
   end

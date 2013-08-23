@@ -7,9 +7,9 @@ describe "Static pages" do
   describe "Home page" do
     before { visit root_path }
 
-    it "should have the content 'Memcached SaaS'" do
-      should have_selector('h1', text: 'Get your Memcached')
-      should have_selector('title', text: full_title('Memcached Server'))      
+    it "should have the content 'Slumlord WordPress'" do
+      should have_selector('h1', text: 'Get your WordPress')
+      should have_selector('title', text: full_title('WordPress Server'))      
     end
   end
 
