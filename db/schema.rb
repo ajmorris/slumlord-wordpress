@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(:version => 20130412175743) do
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
     t.string   "password_digest"
-    t.string   "wordpress"
+    t.string   "memcached"
     t.string   "docker_ip"
     t.string   "secure_ip"
     t.string   "container_id"

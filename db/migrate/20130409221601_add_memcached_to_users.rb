@@ -1,5 +1,5 @@
-class AddWordPressToUsers < ActiveRecord::Migration
+class AddMemcachedToUsers < ActiveRecord::Migration
   def change
-    add_column :users, :wordpress, :string
+    add_column :users, :memcached, :string
   end
 end
